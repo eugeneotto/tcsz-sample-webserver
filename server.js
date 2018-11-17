@@ -11,7 +11,7 @@ router.get('/', async (ctx, next) => {
   const url = `https://public.api.cryptokitties.co/v1/kitties/${kittyId}`
   const kittyJson = await axios.get(url, {
     headers: {
-      'x-api-token': 'YOUR-CRYPTKITTY-API-KEY'
+      'x-api-token': 'YOUR-CRYPTOKITTIES-API-KEY'
     }
   })
 
@@ -19,7 +19,7 @@ router.get('/', async (ctx, next) => {
   ctx.body = kittyJson.data
 })
 
-router.post('/move', (ctx, next) => {
+router.post('/example', (ctx, next) => {
   // Do something...
 
   // Set response

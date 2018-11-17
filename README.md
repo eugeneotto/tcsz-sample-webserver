@@ -14,7 +14,7 @@ yarn start
 curl http://localhost:4000
 
 # POST (responds with a JSON object)
-curl -d '' http://localhost:4000
+curl -d '' http://localhost:4000/example
 ```
 
 
